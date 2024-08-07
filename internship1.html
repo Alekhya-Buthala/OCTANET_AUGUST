@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:powderblue;
+            color: #333;
+	    padding-top: 60px;
+        }
+        nav {
+            background-color: beige;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+	    position: fixed;
+	    top: 0;
+	    width: 98%;
+	    z-index: 1000;
+        }
+        nav img {
+            height: 40px;
+        }
+        nav a {
+            color: green;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+	    position: relative;
+            height: 400px;
+            text-align: center;
+            color: red;
+	 }
+        header::before {
+            content: "";
+            background: url('bookheaven.jpg') no-repeat center center/cover;
+	    position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 55%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about, .contact {
+            background-color: pink;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 20px 0;
+        }
+        .subsection h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="log.jpg" alt="Book Haven Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Book Heaven</h1>
+        <p>Your ultimate destination for book lovers</p>
+    </header>
+
+    <section id="collection">
+        <h2>Our Collection</h2>
+        <p>Explore our extensive collection of books across various genres.</p>
+        <img src="ourcollection.jpg" alt="Collection" class="section-image">
+        <div class="subsection">
+            <h3>Fiction</h3>
+            <p>Discover captivating stories and imaginative worlds.</p>
+            <img src="fiction(1).jpg" alt="Fiction" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Non-Fiction</h3>
+            <p>Expand your knowledge with our non-fiction selection.</p>
+            <img src="nonfiction.jpg" alt="Non-Fiction" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Children's Books</h3>
+            <p>Fun and educational books for young readers.</p>
+            <img src="children.jpg" alt="Children's Books" class="section-image">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <p>Read what others said about our collection.</p>
+        <img src="review(1).png" alt="Reviews" class="section-image">
+        <div class="subsection">
+            <h3>Customer Reviews</h3>
+            <p>See feedback from our satisfied readers.</p>
+            <img src="reviews.jpg" alt="Customer Reviews" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Critic Reviews</h3>
+            <p>Professional reviews from literary critics.</p>
+            <img src="critic.jpg" alt="Critic Reviews" class="section-image">
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay updated with our latest articles on books and reading.</p>
+        <img src="bl.jpg" alt="Blog" class="section-image">
+        <div class="subsection">
+            <h3>Book Recommendations</h3>
+            <p>Find your next favorite book with our recommendations.</p>
+            <img src="reco.jpg" alt="Book Recommendations" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Author Interviews</h3>
+            <p>Get insights from your favorite authors.</p>
+            <img src="in.jpg" alt="Author Interviews" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Reading Tips</h3>
+            <p>Improve your reading habits with our tips and advice.</p>
+            <img src="tips.jpg" alt="Reading Tips" class="section-image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a community of book enthusiasts dedicated to sharing our love for reading.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+        <p>Email: info@bookheaven.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+</body>
+</html>
